@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Project Interior/Images/Logo.jpg">
+  <title>Captivate Interiors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: #437bd3;" class="d-flex flex-column min-vh-100">
+  <!-- Header -->
+  <section>
+    <div class="container-fluid text-center">
+      <div class="row ">
+          <div class="col-md-4" style="background-color: #437bd3">
+            <img width="100" height="100" src="/Project Interior/Images/Logo.jpg" class="float-start">
+          </div>
+          <div class="col-md-4 d-flex justify-content-center align-self-center" style="background-color: #437bd3">            
+              <h1>Captivate Interiors</h1>
+          </div>
+          <div class="col-md-4" style="background-color: #437bd3">
+          </div>
+      </div>
+  </div>
+</section>
+  <!-- Navbar -->
+  <section>
+    <nav class="navbar navbar-expand-sm bg-dark justify-content-center border-top border-bottom border-white">
+        <ul class="nav nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="/Project Interior/HTML/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/Project Interior/HTML/contact_page.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/Project Interior/HTML/shop_page.html">Shop</a>
+          </li>
+        </ul> 
+    </nav> 
+  </section>
+<!-- CEO Body -->
+<section>
+  <div id="hideCEO" class="row bg-light" onmouseenter="showButton()" onmouseleave="hideButton()">
+      <div class="col-md-6">
+      <img id="CEO_IMG" src="/Project Interior/Images/CEO1.jpg" alt="Image Of CEO Tamara Johnson">
+      </div>
+      <div class="col-md-6">
+      <div id="CEO_TITLE" class="display-1">CEO</div>
+      <div id="CEO_NAME" class="display-6">Tamara Johnson</div>
+      <p id="CEO_DES" class="fw-bold">Tamara Johnson is an experienced interior designer with 15 years of experience. Driven by her passion for interior design, she takes pride in providing the best service to her clientele.
+        As a designer/CEO, her goals include capturing the clients vision to the best of her ability and ensuring that her company is always working to their best ability. Graduating from the University of Auckland, 
+        Tamara has acquired a Bachelor of Commerce/ Bachelor of Fine Arts Conjoint. Giving her and edge ove her competition. Tamara founded the company 10 years ago with the help of her now Managing Director
+        David Quinto and Rosalin Darwin. In her spare time, Tamara enjoys playing the Sims series, which allows her to hone her design skills with the endless design possibilities of the game.
+      </p>      
+      <button id="CEO_BTN" class="btn btn-primary" type="button" onclick="changeMD()">Change to MD</button>
+      </div>       
+    </div>
+</section>
+
+<!-- Staff Body -->
+<section>
+  <div class="bg-dark text-center py-5  border-bottom border-top">
+      <div id="reset" class="col-md-12" onmouseenter="showResetButton()" onmouseleave="hideResetButton()">    
+        <h1 class="fw-light text-white">Meet the Team</h1>
+        <div>
+          <button id="button6" class="btn-lg btn-primary text-start" type="button" onclick="showStaff1()">Reset Staff</button>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid ">
+    <div class="row text-center"> 
+      <div id="staff1" class="col-md-6  bg-light" onmouseover="showButton1()" onmouseout="hideButton1()">
+        <img src="/Project Interior/Images/Employee4.jpg" alt="Image of Rosalin Darwin" width="400" height="400">
+        <div>
+          <button id="button1" class="btn-lg btn-primary" type="button" onclick="hideStaff1()">Hide</button>
+        </div>
+        <h4><strong>Chief Creative Officer (CCO)</strong></h4>
+        <h5>Rosalin Darwin</h5>
+        <p>Rosalin is one of the founding members of the company, she also graduated from University of Auckland with a Bachelor of Commerce/ Bachelor of Fine Arts Conjoint. Allowing her and Tamara to 
+          brute force their way to the top of the industry. Being the CCO Rosalin directs the company's creative output with the guidance of Tamara if needed. She also enjoys playing the Sims series as 
+          this also allows her to hone her creative talents
+        </p>  
+      </div>
+      <div id="staff2" class="col-md-6 bg-light" onmouseover="showButton2()" onmouseout="hideButton2()">
+        <img src="/Project Interior/Images/Employee5.jpg" alt="Image of Jun MacGilleFhaolain" width="400" height="400">
+        <div>
+          <button id="button2" class="btn-lg btn-primary" type="button" onclick="hideStaff2()">Hide</button>
+        </div>
+        <h4><strong>Vice President of Design</strong></h4>
+        <h5>Jun MacGilleFhaolain</h5>
+        <p>Jun is the newest member of the creative team behind Captivate Interiors, only being with the company for 3 years she has worked her way up to the fourth highest position available within the company.
+          Jun graduated from Auckland University of Technology with a Bachelor of Commerce/ Bachelor of Fine Arts Conjoint and has used this alongside her great work ethic to climb her way up the ranks.
+          In her spare times she prefers to draw and paint.
+        </p>    
+      </div>
+    </div>
+    <div class="row text-center">
+      <div id="staff3" class="col-md-4  bg-light" onmouseover="showButton3()" onmouseout="hideButton3()">
+        <img src="/Project Interior/Images/Employee1.jpg" alt="Image of Leo Narang" width="400" height="400">
+        <div>
+          <button id="button3" class="btn-lg btn-primary" type="button" onclick="hideStaff3()">Hide</button>
+        </div>
+        <h4><strong>Art Director</strong></h4>
+        <h5>Leo Narang</h5>
+        <p>Leo has been with the company for 8 years, and has been the Art Director for the past 4 years. He is a prime example of what hard work and passion can strive to achieve, as he did not need tertiary 
+          education to climb his way up. He spends his free time building project cars for him to enjoy.
+        </p>
+        
+      </div>
+      <div id="staff4" class="col-md-4 bg-light" onmouseover="showButton4()" onmouseout="hideButton4()">
+        <img src="/Project Interior/Images/Employee2.jpg" alt="Image of Verner Lafrenz" width="400" height="400">
+        <div>
+          <button id="button4" class="btn-lg btn-primary" type="button" onclick="hideStaff4()">Hide</button>
+        </div>
+        <h4><strong>Design Manager</strong></h4>
+        <h5>Verner Lafrenz</h5>
+        <p>Verner has been with the company from the beginning, being one of the first employees to be employed. Choosing to step down from Art Director 4 years ago inorder to take on a less stressful role 
+          to allow him to spend time with his family. He enjoys spending time with his family and cooking.
+        </p>      
+      </div>
+      <div id="staff5" class="col-md-4 bg-light" onmouseover="showButton5()" onmouseout="hideButton5()">
+        <img src="/Project Interior/Images/Employee3.jpg" alt="Image of Isadore Morgan" width="400" height="400">
+        <div>
+          <button id="button5" class="btn-lg btn-primary" type="button" onclick="hideStaff5()">Hide</button>
+        </div>
+        <h4><strong>Design Manager</strong></h4>
+        <h5>Isadore Morgan</h5>
+        <p>Isadore has been with the company fromthe beginning, being one of the first employees to be employed. She has slowly worked her way up the ladder and is aiming for CCO in the future.
+          In her spare time she can be found on the beach or in a pool swimming as she enjoys it. 
+        </p>      
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <div class="container-fluid mt-0 mb-0 text-center bg-dark mt-auto " >
+      <div class="row">
+        <footer>
+          <ul>
+              <li style="display: inline-block; padding-right: 10px;"><a href="https://www.facebook.com/"><img src="/Project Interior/Images/Facebook.png" alt="facebook" height="55"></a></li>
+              <li style="display: inline-block; padding-right: 10px;"><a href="https://twitter.com/"><img src="/Project Interior/Images/Twitter.png" alt="twitter" height="55"></a></li>
+              <li style="display: inline-block; padding-right: 10px;"><a href="https://www.instagram.com/"><img src="/Project Interior/Images/Instagram.png" alt="instagram" height="55"></a></li>
+              <li style="display: inline-block; padding-right: 10px;"><a href="https://www.linkedin.com/"><img src="/Project Interior/Images/LinkedIn.png" alt="linkedin" height="55"></a></li>
+          </ul>
+       </footer>
+        </div>
+      </div>
+
+      <script> 
+      //get elements
+        var CEO_Title = document.getElementById('CEO_TITLE')
+        var CEO_Image = document.getElementById('CEO_IMG')
+        var CEO_Name = document.getElementById('CEO_NAME')
+        var CEO_Des = document.getElementById('CEO_DES')
+        var CEO_Btn = document.getElementById('CEO_BTN')
+        var Hide_CEO = document.getElementById('hideCEO')
+        var button1 = document.getElementById('button1');//Hide Staff Member1 Button
+        var button2 = document.getElementById('button2');//Hide Staff Member2 Button
+        var button3 = document.getElementById('button3');//Hide Staff Member3 Button
+        var button4 = document.getElementById('button4');//Hide Staff Member4 Button 
+        var button5 = document.getElementById('button5');//Hide Staff Member5 Button   
+        var button6 = document.getElementById('button6');//Hide Reset Button  
+        var button7 = document.getElementById('CEO_BTN');//Hide HideCEO Button
+        button1.style.visibility = "hidden";
+        button2.style.visibility = "hidden";
+        button3.style.visibility = "hidden";
+        button4.style.visibility = "hidden";
+        button5.style.visibility = "hidden";
+        button6.style.visibility = "hidden";
+        button7.style.visibility = "hidden";
+
+          function changeMD()
+            {          
+                if(CEO_Title.textContent == "CEO")
+                  {
+                      CEO_Title.innerHTML = "MD";
+                      CEO_Name.innerHTML = "David Quinto";
+                      CEO_Des.innerHTML = "David Quinto is an experienced interior designer with 25 years of experience. Driven by his passion to help others achiver their dreams, he takes pride in providing the best leadership and design skills he can. As managing director, David overlooks all the activity of the company and ensures that all goals are completed by the company. Also graduating from the University of Auckland with his Bachelor of Commerce/ Bachelor of Fine Arts Conjoint he uses his education to the best of his abilities. Alongside Tamara and Rosalin, David founded Captivate Interiors to empower others to set their dreams as high as they want to because anything is achievable. In his spare time, David enjoys listening to music and playing games with his children.";
+                      CEO_Image.src = "/Project Interior/Images/MD.jpg";
+                      CEO_Btn.innerHTML = "Change to CEO";
+                  }
+            }
+
+            function showButton()
+                  {   
+                      if(CEO_Title.textContent == "CEO")
+                      {
+                        button7.style.visibility = "visible";
+                      }
+                  }
+
+            function hideButton()
+                  {
+                    button7.style.visibility = "hidden";
+                  }
+            //Staff Member 1 
+            function hideStaff1()
+                  { 
+                      var staff = document.getElementById('staff1');                       
+                      staff.style.visibility = "hidden";
+                  }
+ 
+            function showButton1()
+                  {
+                    button1.style.visibility = "visible";
+                  }
+
+            function hideButton1()
+                  {
+                      button1.style.visibility = "hidden";
+                  }
+            //Staff Member 2                  
+            function hideStaff2()
+                  { 
+                      var staff = document.getElementById('staff2');                       
+                      staff.style.visibility = "hidden";
+                  }
+ 
+            function showButton2()
+                  {
+                    button2.style.visibility = "visible";
+                  }
+
+            function hideButton2()
+                  {
+                      button2.style.visibility = "hidden";
+                  } 
+                  //Staff Member 3                 
+            function hideStaff3()
+                  { 
+                      var staff = document.getElementById('staff3');                       
+                      staff.style.visibility = "hidden";
+                  }
+ 
+            function showButton3()
+                  {
+                      button3.style.visibility = "visible";
+                  }
+
+            function hideButton3()
+                  {
+                      button3.style.visibility = "hidden";
+                  }  
+                  //Staff Member 4                  
+            function hideStaff4()
+                  { 
+                      var staff = document.getElementById('staff4');                       
+                      staff.style.visibility = "hidden";
+                  }
+ 
+            function showButton4()
+                  {
+                    button4.style.visibility = "visible";
+                  }
+
+            function hideButton4()
+                  {
+                      button4.style.visibility = "hidden";
+                  } 
+                  //Staff Member 5                 
+            function hideStaff5()
+                  { 
+                      var staff = document.getElementById('staff5');                       
+                      staff.style.visibility = "hidden";
+                  }
+ 
+            function showButton5()
+                  {
+                    button5.style.visibility = "visible";
+                  }
+
+            function hideButton5()
+                  {
+                      button5.style.visibility = "hidden";
+                  } 
+
+            function showStaff1()
+                  {
+                      var staff1 = document.getElementById('staff1'); 
+                      var staff2 = document.getElementById('staff2'); 
+                      var staff3 = document.getElementById('staff3'); 
+                      var staff4 = document.getElementById('staff4'); 
+                      var staff5 = document.getElementById('staff5');
+
+                      staff1.style.visibility = "visible";
+                      staff2.style.visibility = "visible";
+                      staff3.style.visibility = "visible";
+                      staff4.style.visibility = "visible";
+                      staff5.style.visibility = "visible";
+
+                      CEO_Title.innerHTML = "CEO";
+                      CEO_Name.innerHTML = "Tamara Johnson";
+                      CEO_Des.innerHTML = "Tamara Johnson is an experienced interior designer with 15 years of experience. Driven by her passion for interior design, she takes pride in providing the best service to her clientele. As a designer/CEO, her goals include capturing the clients vision to the best of her ability and ensuring that her company is always working to their best ability. Graduating from the University of Auckland, Tamara has acquired a Bachelor of Commerce/ Bachelor of Fine Arts Conjoint. Giving her and edge ove her competition. Tamara founded the company 10 years ago with the help of her now Managing Director David Quinto and Rosalin Darwin. In her spare time, Tamara enjoys playing the Sims series, which allows her to hone her design skills with the endless design possibilities of the game. ";
+                      CEO_Image.src = "/Project Interior/Images/CEO1.jpg";
+                      CEO_Btn.innerHTML = "Change to MD";
+                  }
+            function showResetButton()
+                  {
+                      button6.style.visibility = "visible";
+                  } 
+            function hideResetButton()
+                  {
+                      button6.style.visibility = "hidden";
+                  }    
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+</body>
+</html>
